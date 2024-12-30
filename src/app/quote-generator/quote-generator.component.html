@@ -1,0 +1,11 @@
+<section>
+    <h1>Quote</h1>
+    <div *ngIf="quote !== null">
+        {{ quote.quote }} - {{ quote.author }}
+    </div>
+    <div *ngIf="quote === null">
+        No quote loaded.
+    </div>
+
+    <button (click)="generateQuote()">Generate quote</button>
+</section>
